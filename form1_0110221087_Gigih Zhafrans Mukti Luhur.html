@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Page</title>
+</head>
+
+<body style="margin: 1cm 12.4cm;">
+    <form action="http://blackgoosebistro.com/pizza.php" target="_blank" method="post">
+        <fieldset style="padding-right: 20px;">
+            <h3 style="text-align: left;">Black Goose Bistro | Pizza-on-Demand</h3>
+            <p style="font-size: 16px;">Our 12" wood-fired are available for delivery. Build your custom pizza and we'll
+                deliver it within an hour.</p>
+            <p style="font-size: 16px; margin-bottom: -15px;">Your Information</p>
+            <ol style="font-size: 16px; list-style: none; margin-left: -40px;">
+                <li>
+                    <label for="custname">Customer Name: </label>
+                    <input type="text" name="customername" id="custname" required>
+                </li>
+                <li>
+                    <label for="address">Address: </label>
+                    <input type="text" name="address" id="address" required>
+                </li>
+                <li>
+                    <label for="telephone">Telephone: </label>
+                    <input type="text" name="telephone" id="telephone" required>
+                </li>
+                <li>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li>
+                    <label for="instruction">Instructions: </label><br>
+                    <textarea maxlength="400" name="instructions" style="font-size: 10px; width: 300px;"
+                        placeholder="No more than 400 characters long"></textarea>
+                </li>
+            </ol>
+            <h4 style="margin-top: -1px; margin-bottom: -15px;">Design Your Dream Pizza:</h4>
+            <p style="font-size: 16px;">Pizza specs</p>
+            <p style="margin-bottom: -15px;">Crust (Choose one):
+            <ol style="list-style: none; margin-left: -25px;">
+                <li><input type="radio" name="crust" value="clwhite" required>Classic White</li>
+                <li><input type="radio" name="crust" value="mltgrain" required>Multigrain</li>
+                <li><input type="radio" name="crust" value="chstfcrst" required>Cheese-stuffed Crust</li>
+                <li><input type="radio" name="crust" value="gltnfree" required>Gluten-Free</li>
+            </ol>
+            </p>
+            <p style="margin-bottom: -15px;">Toppings (Choose as many as you want):
+            <ol style="list-style:none; margin-left: -25px;">
+                <li>
+                    <input type="checkbox" name="toppings[]" id="toppings[]" value="red sauce" checked>
+                    <label for="topping1">Red Sauce</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toppings[]" id="toppings[]" value="White sauce">
+                    <label for="topping2">White Sauce</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toppings[]" id="toppings[]" value="Mozarella Cheese">
+                    <label for="topping3">Mozarella Cheese</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toppings[]" id="toppings[]" value="Pepperoni">
+                    <label for="topping4">Pepperoni</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toppings[]" id="toppings[]" value="Mushrooms">
+                    <label for="topping5">Mushrooms</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toppings[]" id="toppings[]" value="Peppers">
+                    <label for="topping6">Peppers</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toppings[]" id="toppings[]" value="White sauce">
+                    <label for="topping7">Anchovies</label>
+                </li>
+            </ol>
+            </p>
+            <p style="margin-bottom: -15px;">Number</p>
+            <br/>
+            <label for="pizzas">How many pizzas: </label>
+            <select name="pizzas" id="pizzas">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+            <br/>
+            <br/>
+            <button style="border: 2px solid black; border-radius: 5px;" type="submit">Bring me a pizza!</button>
+            <button style="border: 2px solid black; border-radius: 5px;" type="reset">Reset</button>
+        </fieldset>
+    </form>
+    </div>
+
+</body>
+
+</html>
